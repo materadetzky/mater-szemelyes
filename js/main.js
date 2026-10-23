@@ -312,3 +312,35 @@ document.addEventListener("DOMContentLoaded", () => {
 let weatherChart = null;
 
 
+
+// Initialize FuzzyText component
+document.addEventListener('DOMContentLoaded', () => {
+    const fuzzyTarget = document.getElementById('fuzzy-text-target');
+    if (fuzzyTarget && window.initFuzzyText) {
+        window.initFuzzyText(fuzzyTarget, {
+            text: 'Radetzky Máté',
+            fontSize: 'clamp(2rem, 5vw, 2.5rem)',
+            fontWeight: 700,
+            fontFamily: 'JetBrains Mono, monospace',
+            color: '#ffffff',
+            enableHover: true,
+            baseIntensity: 0.18,
+            hoverIntensity: 0.5,
+            fuzzRange: 20,
+            fps: 60,
+            direction: 'horizontal',
+            transitionDuration: 0,
+            clickEffect: false,
+            glitchMode: true,
+            glitchInterval: 2500,
+            glitchDuration: 200,
+            letterSpacing: 0,
+            sliceSize: 1,
+            trigger: 'hover',
+            intro: true,
+            introDuration: 1400,
+            colorSplit: 0.3
+        });
+    }
+});
+

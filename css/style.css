@@ -496,3 +496,17 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* FuzzyText Component Container */
+.fuzzy-text-container {
+    display: inline-block;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    overflow: visible;
+}
+.fuzzy-text-canvas {
+    display: block;
+    max-width: 100%;
+}
+
