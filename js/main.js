@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fuzzyTarget = document.getElementById('fuzzy-text-target');
     if (fuzzyTarget && window.initFuzzyText) {
         window.initFuzzyText(fuzzyTarget, {
-            text: 'Radetzky Máté',
+            text: 'Radetzky MÃ¡tÃ©',
             fontSize: 'clamp(2rem, 5vw, 2.5rem)',
             fontWeight: 700,
             fontFamily: 'JetBrains Mono, monospace',
